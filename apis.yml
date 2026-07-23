@@ -1,8 +1,23 @@
 aid: atara-bio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/atara-bio.png
 name: Atara Bio
-description: 'Atara Bio is a company surfaced as a portfolio company of kleiner-perkins and added to the
-  API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Atara Biotherapeutics is a clinical-stage allogeneic (off-the-shelf) T-cell immunotherapy
+  company developing transformative therapies that harness T cells to fight cancer and autoimmune
+  conditions, and is the first company to receive regulatory approval for an allogeneic T-cell
+  immunotherapy. Surfaced as a portfolio company of Kleiner Perkins and added to the API Evangelist
+  network. The company publishes a corporate website but no public developer API, developer portal,
+  or API documentation was found; this profile carries identity and domain-security posture only.'
 url: https://raw.githubusercontent.com/api-evangelist/atara-bio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Biotechnology
+- Immunotherapy
+- Cell Therapy
+- Pharmaceuticals
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/atara-bio-domain-security.yml
 - type: Website
   url: https://www.atarabio.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
